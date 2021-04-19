@@ -2,8 +2,8 @@ const styles = {
   global: {
     // styles for the `body`
     body: {
-      bg: 'gray.400',
-      color: 'white'
+      bg: '#fff',
+      color: '#000'
     },
     // styles for the `a`
     a: {
