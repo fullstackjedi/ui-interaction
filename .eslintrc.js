@@ -1,5 +1,6 @@
 module.exports = {
   root: true, // Make sure eslint picks up the config at the root of the directory
+  parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 2020, // Use the latest ecmascript standard
     sourceType: 'module', // Allows using import/export statements
@@ -19,8 +20,11 @@ module.exports = {
   },
   extends: [
     'eslint:recommended',
+    'plugin:@typescript-eslint/eslint-recommended',
+    'plugin:@typescript-eslint/recommended',
     'plugin:react/recommended',
     'plugin:jsx-a11y/recommended',
+    'prettier/@typescript-eslint',
     'plugin:prettier/recommended' // Make this the last element so prettier config overrides other formatting rules
   ],
   rules: {
