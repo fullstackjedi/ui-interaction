@@ -1,5 +1,4 @@
-const Button = {
-  // 1. We can update the base styles
+export const Button = {
   baseStyle: {
     _focus: {
       border: 'none',
@@ -8,5 +7,3 @@ const Button = {
     }
   }
 };
-
-export default Button;

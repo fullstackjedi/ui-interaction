@@ -1,11 +1,13 @@
 const styles = {
   global: {
-    // styles for the `body`
+    html: {
+      fontSize: '62.5%'
+    },
     body: {
       bg: '#fff',
-      color: '#000'
+      color: '#000',
+      fontSize: '1.4rem'
     },
-    // styles for the `a`
     a: {
       color: 'teal.500',
       _hover: {
