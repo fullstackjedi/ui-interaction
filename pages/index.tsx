@@ -1,8 +1,8 @@
-import React from 'react'
-import { Box, Button, Text } from '@chakra-ui/react';
-import Head from 'next/head';
+import React, { ReactChild } from 'react'
+import { Box, Button, Text } from '@chakra-ui/react'
+import Head from 'next/head'
 
-export default function Home() {
+const Home = (): ReactChild => {
   return (
     <Box>
       <Head>
@@ -12,5 +12,7 @@ export default function Home() {
       <Text>Home page</Text>
       <Button>Click Me</Button>
     </Box>
-  );
+  )
 }
+
+export default Home
