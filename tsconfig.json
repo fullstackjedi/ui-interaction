@@ -6,12 +6,8 @@
     "forceConsistentCasingInFileNames": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "lib": [
-      "dom",
-      "es2017"
-    ],
+    "lib": ["dom", "es2017"],
     "module": "esnext",
-    "moduleResolution": "node",
     "noEmit": true,
     "noFallthroughCasesInSwitch": true,
     "noUnusedLocals": true,
@@ -19,22 +15,20 @@
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "strict": true,
-    "target": "esnext"
+    "target": "esnext",
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "paths": {
+      "@styles/*": ["./styles/*"],
+      "@components/*": ["./components/*"],
+      "@templates/*": ["./components/templates/*"],
+      "@config/*": ["./config/*"],
+      "@queries/*": ["./queries/*"],
+      "@utils/*": ["./utils/*"],
+      "@context/*": ["./context/*"],
+      "@hooks/*": ["./hooks/*"]
+    }
   },
-  "exclude": [
-    "node_modules"
-  ],
-  "include": [
-    "**/*.ts",
-    "**/*.tsx"
-  ],
-  "baseUrl": ".",
-  "paths": {
-    "@styles/*": [
-      "./styles/*"
-    ],
-    "@components/*": [
-      "./components/*"
-    ]
-  }
+  "exclude": ["node_modules"],
+  "include": ["**/*.ts", "**/*.tsx"]
 }

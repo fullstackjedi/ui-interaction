@@ -1,11 +1,12 @@
-// 1. Import the extendTheme function
-import { extendTheme } from '@chakra-ui/react';
+import { buttonStyles, inputStyles, switchStyles } from '@styles/components'
+import { colors, textStyles } from '@styles/foundations'
 
-import colors from './foundations/colors';
-import { fonts } from './foundations/fonts';
-import Button from './components/buttons';
-import styles from './global';
+import { extendTheme } from '@chakra-ui/react'
+import styles from './global'
 
-const theme = extendTheme({ colors, fonts, styles, components: { Button } });
-
-export default theme;
+export default extendTheme({
+  colors,
+  textStyles,
+  styles,
+  components: { Button: buttonStyles, Input: inputStyles, Switch: switchStyles }
+})

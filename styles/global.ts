@@ -1,20 +1,33 @@
-const styles = {
+export default {
   global: {
     html: {
       fontSize: '62.5%'
     },
     body: {
       bg: '#fff',
-      color: '#000',
-      fontSize: '1.4rem'
+      color: '#41546c',
+      fontSize: '1.4rem',
+      fontFamily: 'Montserrat, sans-serif'
     },
     a: {
-      color: 'teal.500',
       _hover: {
-        textDecoration: 'underline'
+        textDecoration: 'none'
       }
+    },
+    '@keyframes blinker': {
+      from: { opacity: '1.0' },
+      to: { opacity: '0.0' }
+    },
+    '.chakra-switch__track': {
+      _focus: {
+        boxShadow: 'none !important'
+      }
+    },
+    '.toastContainer': {
+      zIndex: '1550 !important'
+    },
+    '.toast.success': {
+      backgroundColor: 'rgba(40,51,65,1) !important'
     }
   }
-};
-
-export default styles;
+}
