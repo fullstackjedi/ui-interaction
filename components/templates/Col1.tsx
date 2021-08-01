@@ -1,4 +1,4 @@
-import { Flex, Heading, Box, Icon, Image } from '@chakra-ui/react'
+import { Flex, Heading, Box, Icon } from '@chakra-ui/react'
 import { MotionBox, MotionFlex, MotionImage } from '@components/animation/FramerElements'
 import React from 'react'
 import { AiOutlineShoppingCart, AiOutlineUser } from 'react-icons/ai'
